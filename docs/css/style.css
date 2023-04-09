@@ -7,8 +7,8 @@ html{
 }
 
 *,*::after,*::before{
-    padding: 0;
-    margin: 0;
+    padding: inherit;
+    margin: inherit;
     box-sizing: inherit;
 }
 
@@ -19,7 +19,6 @@ li{
 .title{
     text-align: center;
     font-size: 175%;
-    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -28,7 +27,6 @@ li{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 5px;
-    margin: 0 20px;
 }
 
 .food-articles__item{
@@ -46,7 +44,6 @@ li{
     text-align: center;
     font-size: 175%;
     float: right;
-    margin-bottom: 10px;
 }
 
 .food-articles__item-title-1{
@@ -81,15 +78,5 @@ background-color: #d79191;
 @media (max-width:767px) {
     .food-articles{
         grid-template-columns: 100%;
-    }
-}
-
-@media (max-width:228px) {
-    .food-articles{
-        min-width: 160px;
-    }
-    .food-articles__item-title{
-        width: 100%;
-        border-left: none;
     }
 }
